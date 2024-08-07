@@ -13,6 +13,8 @@ retrieveKey({ name: 'Sam' }, 'age');
 
 const obj = { a: 1, b: 2 };
 
-function valueFinder(object, key) {}
+function valueFinder(object, key) {
+  return object[key];
+}
 
 console.log(valueFinder(obj, "b"));
